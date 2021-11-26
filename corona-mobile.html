@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>corona</title>
+    <link rel="stylesheet" href="style/style-header1.css">
+</head>
+<body>
+    <header>
+        <div class="header-contenedor">
+            <img class="header-imagenes" src="imagenes/logo-corona.svg" alt="logo corona">
+            <img class="header-imagenes" src="imagenes/icono-menu.svg" alt="icono menu">
+        </div>
+    </header>
+    <section>
+        <div class="inicio-contenedor">
+            <h3 class="inicio-title-small">trivia de brillo</h3>
+            <div class="inicio-contenedor-title">
+                <h1 class="inicio-title">tu botella personalizada està màs cerca, ¡regìstrate!</h1>
+            </div>
+            <div class="inicio-contenedor-text">
+                <p class="inicio-text">
+                    Ayúdanos con tus datos para que, en caso de que ganes,
+                    sea más fácil contactarte y enviarte tus premios. 
+                </p>
+            </div>
+        </div>
+        <form class="form" action="corona-404.html">
+            <div class="form-container">
+                <label class="form-text" for="nombre">Nombre *</label>
+                <input class="form-campo-text" type="text" id="nombre" placeholder="ingresa solo tu nombre" > 
+            </div>
+            
+            <div class="form-container">
+                <label class="form-text" for="apellido">Apellido *</label>
+                <input class="form-campo-text" type="text" id="apellido" placeholder="ingresa solo tu Apellido" > 
+            </div>
+            <div class="form-container">
+                <label class="form-text" for="email">Correo electrónico *</label>
+                <input class="form-campo-text" type="email" placeholder="mail@tumail.com" id="email"  required> 
+            </div>
+            <div class="form-container">
+                <label class="form-text" for="telefono">Numero de Teléfono  *</label>
+                <input class="form-campo-text" type="tel" id="telefono" placeholder="000-000-00000" > 
+            </div>
+            <div class="form-container">
+                <label class="form-text" for="telefono">Fecha de nacimiento  *</label>
+                <div class="container-date">
+                    <select class="form-select" name="select">
+                        <option value="mes">Mes</option>
+                        <option value="enero">Enero</option>
+                        <option value="febrero">Febrero</option>
+                        <option value="marzo">Marzo</option>
+                        <option value="abril">Abril</option>
+                        <option value="mayo">Mayo</option>
+                        <option value="junio">Junio</option>
+                        <option value="julio">Julio</option>
+                        <option value="agosto">Agosto</option>
+                        <option value="septiembre">Septiembre</option>
+                        <option value="octumbre">Octumbre</option>
+                        <option value="noviembre">Noviembre</option>
+                        <option value="diciembre">Diciembre</option>
+                    </select>
+                    <input class="date-day-year" type="text" type="number" placeholder="Dia">
+                    <input class="date-day-year" type="text" type="number" placeholder="Año">
+                </div>  
+            </div>
+            <div class="form-container">
+                <label class="form-text" for="genero">Género *</label>
+                <select class="form-select form-select-full" id="genero" name="select">
+                    <option value="Seleccione una opción">Seleccione una opción</option>
+                    <option value="Hombre">Hombre</option>
+                    <option value="Mujer">Mujer</option>
+                    <option value="Aun no se">Aun no se</option>
+                </select>
+            </div>
+
+            <div class="form-container">
+                <label class="form-text" for="ciudad">Ciudad *</label>
+                <select class="form-select form-select-full" id="ciudad" name="select">
+                    <option value="Seleccione una opción">Seleccione una opción</option>
+                    <option value="Hombre">Bogota</option>
+                    <option value="Mujer">Medellin</option>
+                    <option value="Aun no se">Cartagena</option>
+                </select>
+            </div>
+
+            <div class="form-container">
+                <label class="form-text" for="Estado">Estado *</label>
+                <select class="form-select form-select-full" id="ciudad" name="select">
+                    <option value="Seleccione una opción">Seleccione una opción</option>
+                    <option value="Hombre">Cundinamarca</option>
+                    <option value="Mujer">Antioquia</option>
+                    <option value="Aun no se">Atlantico</option>
+                </select>
+            </div>
+
+            <div class="form-container">
+                <label class="form-text" for="Comida favorita">Comida favorita *</label>
+                <select class="form-select form-select-full" id="Comida favorita" name="select">
+                    <option value="Seleccione una opción">Seleccione una opción</option>
+                    <option value="Hombre">Caviar</option>
+                    <option value="Mujer">Ajiaco</option>
+                    <option value="Aun no se">Arroz con huevo</option>
+                </select>
+            </div>
+
+            <div class="form-container">
+                <label class="form-text" for="Equipo de futbol favorito">Equipo de futbol favorito *</label>
+                <select class="form-select form-select-full" id="Equipo de futbol favorito" name="select">
+                    <option value="Seleccione una opción">Seleccione una opción</option>
+                    <option value="Hombre">Barcelona</option>
+                    <option value="Mujer">Real Madrid</option>
+                    <option value="Aun no se">Millonarios</option>
+                </select>
+            </div>
+        
+            <div class="form-checkbox">
+                <input class="form-checkbox-input" type="checkbox" id="terminos-condiciones" >
+                <label class="form-checkbox-label" for="terminos-condiciones">Acepto términos y condiciones, y políticas de uso</label>
+            </div>
+            <div class="form-checkbox">
+                <input class="form-checkbox-input" type="checkbox" id="contacteme" >
+                <label class="form-checkbox-label" for="contacteme">Quiero recibir novedades y promociones de Grupo Modelo</label>
+            </div>
+        </form>
+        <button class="button-trivia">
+            comenzar trivia ahora
+        </button>
+    </section>
+    <footer>
+        <div class="footer-container-logo-corona">
+            <img class="footer-logo-corona" src="../corona/imagenes/icono-corona.svg" alt="icono corona">
+        </div>
+        <div class="footer-container-social-media">
+            <img class="icono-social-media" src="../corona/imagenes/icono-instagram-corona.svg" alt="instagram corona">
+            <img class="icono-social-media" src="../corona/imagenes/icono-twitter-corona.svg" alt="twitter corona">
+            <img class="icono-social-media" src="../corona/imagenes/icono-facebook-corona.svg" alt="facebook corona">
+        </div>
+        <div class="footer-container">
+            <ul class="footer-container-text">
+                <li class="footer-text">términos y condiciones</li>
+                <li class="footer-text">privacidad y politicas</li>
+            </ul>
+            <ul class="footer-container-text">
+                <li class="footer-text">contáctenos</li>
+                <li class="footer-text">tap into your beer</li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p class="copyright-text">Todo con medida. Todos los derechos reservados 2020©.</p>
+            <p class="copyright-text">No compartas este contenido con menores de edad.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
